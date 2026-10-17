@@ -1,0 +1,16 @@
+# Build and output directories
+bin/
+obj/
+
+# Diagnostic collections
+collected_logs/
+collected_dlls/
+
+# Local backup files
+*.original
+*.orig
+*.bak
+
+# Binaries (optional: comment these out if you want to track pre-patched binaries directly)
+# Subnautica.Multiplayer.exe
+# Subnautica.API.Patched.dll
