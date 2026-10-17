@@ -104,3 +104,6 @@ To revert back to the unmodded game at any time:
 1. In the game folder `SubnauticaZero_Data/Managed/`, restore `Assembly-CSharp.dll.orig` over `Assembly-CSharp.dll`.
 2. Clear the Steam Launch Options in the game's properties window.
 *(Alternatively, in Steam: right-click **Subnautica: Below Zero** -> **Properties** -> **Installed Files** -> **Verify integrity of game files**).*
+
+
+Please Note that a *lot* of help from gemini was used in the making of this.
