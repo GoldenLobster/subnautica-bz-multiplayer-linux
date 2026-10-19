@@ -114,13 +114,9 @@ To revert back to the unmodded game at any time:
 > [!NOTE] 
 > If running on a Mac, by default you will not be able to host a server. This is because all ports below 1024 are restricted. It is however possible to setup a packet filter rule to redirect the traffic and bypass this limitation.
 
-1. Install the windows version of steam using wine or crossover, and then install Subnautica: Below Zero using the windows version of steam, therefore installing the windows version of Subnautica: Below Zero
+please refer to the [Mac Guide](MAC_GUIDE.md)
 
-2. Run the helper scripts like normal. See [Quick Start](#quick-start-3-steps)
-> [!NOTE]
-> The scripts are not adapted for macOS yet
-
-3. Click play in steam, it should work like normal.
+Keep in mind this patch has not been tested on macOS, but it should work.
 ---
 
 Please Note that a *lot* of help from gemini was used in the making of this.
