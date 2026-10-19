@@ -1,9 +1,11 @@
-# NOTE
-## This ONLY works with steam
+> [!NOTE]
+>This ONLY works with steam, this patch is not adapted to work with the epicgames launcher.
 
 # Subnautica Below Zero Multiplayer — Linux & Steam (Proton) Guide
 
-This guide explains how to install, patch, and play the **Subnautica: Below Zero Multiplayer Mod** on Linux through Steam using Proton, with direct IP / Tailscale / LAN multiplayer.
+This guide explains how to install, patch, and play the **Subnautica: Below Zero Multiplayer Mod** on Linux through Steam using Proton, with direct IP / Tailscale / LAN multiplayer. 
+
+**Although this patch was not developed with macOS in mind, it should work if you use the windows version of steam and the windows version of Subnautica: Below Zero(using wine or proton). See a more in-depth explanation and guide [below](#mac)**
 
 ---
 
@@ -65,7 +67,7 @@ Friends on either **Linux** or **Windows** can join your game. Windows players d
 
 ## Technical Details: What Was Patched & Why
 
-The official Windows launcher (`Subnautica.Multiplayer.exe`) and its engine assembly (`Subnautica.API.dll`) were patched using [Mono.Cecil](tools/LinuxPatcher/Program.cs) to remove Windows platform dependencies while preserving 100% of the original WPF UI, asset downers, settings, and game-hooking system:
+The official Windows launcher (`Subnautica.Multiplayer.exe`) and its engine assembly (`Subnautica.API.dll`) were patched using [Mono.Cecil](https://github.com/jbevain/cecil) to remove Windows platform dependencies while preserving 100% of the original WPF UI, asset downers, settings, and game-hooking system:
 
 1. **Steam & Wine/Proton Path Resolution**:
    - Skips the Windows registry lookup for Steam (`Software\Valve\Steam`).
@@ -105,5 +107,20 @@ To revert back to the unmodded game at any time:
 2. Clear the Steam Launch Options in the game's properties window.
 *(Alternatively, in Steam: right-click **Subnautica: Below Zero** -> **Properties** -> **Installed Files** -> **Verify integrity of game files**).*
 
+---
+
+## Mac
+
+> [!NOTE] 
+> If running on a Mac, by default you will not be able to host a server. This is because all ports below 1024 are restricted. It is however possible to setup a packet filter rule to redirect the traffic and bypass this limitation.
+
+1. Install the windows version of steam using wine or crossover, and then install Subnautica: Below Zero using the windows version of steam, therefore installing the windows version of Subnautica: Below Zero
+
+2. Run the helper scripts like normal. See [Quick Start](#quick-start-3-steps)
+> [!NOTE]
+> The scripts are not adapted for macOS yet
+
+3. Click play in steam, it should work like normal.
+---
 
 Please Note that a *lot* of help from gemini was used in the making of this.
